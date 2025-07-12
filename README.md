@@ -80,5 +80,4 @@ Adjust Volume: Use the slider or mute/unmute icon.
 Search Songs: Use the search bar to filter songs by title.
 
 Mobile Navigation: On smaller screens, use the hamburger and close icons to toggle the library.
-```
 
