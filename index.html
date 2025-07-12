@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/faviconSpotify.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo flex items-center">
+                    <img class="invert" src="img/logo.svg" alt="logo">
+                    <h3>Spotify</h3>
+                    <div class="home-icon">
+                        <img class="invert" src="img/home.svg" alt="home">
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <img class="invert" src="img/search.svg" alt="search">
+                    <input type="text" placeholder="What do you want to play?" autocomplete="off">
+                    <div class="browse-img invert">
+                        <div class="vertical-bar"></div>
+                        <img src="img/browse.svg" alt="browse">
+                    </div>
+                </div>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <h2>Your Library</h2>
+                <div class="song-list">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <!-- footer links -->
+                    <div><a href="https://www.spotify.com/pk-en/legal/">Legal</a></div>
+                    <div><a href="https://www.spotify.com/pk-en/safetyandprivacy/">Safety & Privacy Center</a></div>
+                    <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/">Privacy Policy</a></div>
+                    <div><a href="https://www.spotify.com/pk-en/legal/cookies-policy/">Cookies</a></div>
+                    <div><a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3">About Ads</a></div>
+                    <div><a href="https://www.spotify.com/pk-en/accessibility/">Accessibility</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburger-container flex">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="">Premium</a></li>
+                            <li><a href="">Support</a></li>
+                            <li><a href="">Download</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical-bar"></div>
+                <div class="btn">
+                    <div class="install">
+                        <img class="invert" src="img/install.svg" alt="install">
+                        <a href="">Install App</a>
+                    </div>
+                    <div class="buttons">
+                        <button class="signupbtn">Sign up</button>
+                        <button class="loginbtn">Log in</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spotify-playlists">
+                <h1>Spotify Playlists</h1>
+                <div class="card-container">
+
+                </div>
+                <div class="playbar invert">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="above-bar">
+                        <div class="song-info"></div>
+                        <div class="song-buttons invert">
+                            <i id="previous" class="fa-solid fa-caret-left fa-fw"></i>
+                            <i id="play" class="fa-solid fa-play fa-fw"></i>
+                            <i id="next" class="fa-solid fa-caret-right fa-fw"></i>
+                        </div>
+                        <div class="volume">
+                            <div class="song-time"></div>
+                            <div class="range">
+                                <i id="max-volume" class="fa-solid fa-volume-high invert"></i>
+                                <input type="range">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
